@@ -100,9 +100,9 @@ uint64_t pow(uint64_t x, uint64_t y) {
 }
 
 uint32_t bitReverse(uint32_t x) {
-	x = (((x & 0xaaaaaaaa) >> 1) | ((x & 0x55555555) << 1));
-	x = (((x & 0xcccccccc) >> 2) | ((x & 0x33333333) << 2));
-	x = (((x & 0xf0f0f0f0) >> 4) | ((x & 0x0f0f0f0f) << 4));
+	x = (((x & 0xaaaaaaaa) >> 1) | ((x & 0x55555555) << 1)); // 1010과 0101
+	x = (((x & 0xcccccccc) >> 2) | ((x & 0x33333333) << 2)); // 1100과 0011
+	x = (((x & 0xf0f0f0f0) >> 4) | ((x & 0x0f0f0f0f) << 4)); // 11110000과 00001111
 	x = (((x & 0xff00ff00) >> 8) | ((x & 0x00ff00ff) << 8));
 	return ((x >> 16) | (x << 16));
 }
@@ -111,7 +111,7 @@ uint64_t gcd(uint64_t a, uint64_t b) {
 	if (a == 0) {
 		return b;
 	}
-	return gcd(b % a, a);
+	return gcd(b % a, a); //재귀
 }
 
 long gcd(long a, long b) {

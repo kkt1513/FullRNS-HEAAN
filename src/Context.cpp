@@ -457,7 +457,7 @@ void Context::fftSpecialInv(complex<double>* vals, const long size) {
 
 void Context::encode(uint64_t* a, complex<double>* v, long slots, long l) {
 	complex<double>* uvals = new complex<double> [slots]();
-	copy(v, v + slots, uvals);
+	copy(v, v + slots, uvals); // v부터 v+slots까지를 uvals에 복사함
 
 	long gap = Nh / slots;
 
