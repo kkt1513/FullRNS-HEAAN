@@ -11,9 +11,9 @@
 
 int main() {
 
-	TestScheme::testEncodeSingle(14, 1, 55);
+//	TestScheme::testEncodeSingle(14, 1, 55);
 
-	TestScheme::testEncodeBatch(15, 6, 55, 3);
+//	TestScheme::testEncodeBatch(15, 6, 55, 3);
 
 	TestScheme::testBasic(15, 11, 55, 3);
 
@@ -27,11 +27,11 @@ int main() {
 
 //	TestScheme::testPowerOf2Batch(16, 15, 50, 2, 3);
 
-	TestScheme::testInverseBatch(14, 5, 55, 4, 3);
+//	TestScheme::testInverseBatch(14, 5, 55, 4, 3);
 
-	TestScheme::testExponentBatch(14, 5, 55, 7, 3);
+//	TestScheme::testExponentBatch(14, 5, 55, 7, 3);
 
-	TestScheme::testSigmoidBatch(16, 15, 55, 3, 3);
+//	TestScheme::testSigmoidBatch(16, 15, 55, 3, 3);
 
 //	TestScheme::testSlotsSum(16, 15, 40, 3);
 

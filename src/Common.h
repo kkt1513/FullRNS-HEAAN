@@ -8,6 +8,7 @@
 
 #ifndef HEAANNTT_COMMON_H_
 #define HEAANNTT_COMMON_H_
+//#define _USE_MATH_DEFINES
 
 #include <iostream>
 #include <stdio.h>
